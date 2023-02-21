@@ -1,0 +1,30 @@
+.sticky-product .container {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.sticky-product {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 20px 0;
+	background-color: #edeaea;
+	z-index: 100;
+	transform: translateY(100%);
+	transition: all .3s ease-out;
+}
+
+.sticky-product.show {
+	transform: translateY(0);
+}
+
+.sticky-item {
+	display: flex;
+	justify-content: space-around;
+}
+
+.sticky-item .info .price {
+	margin-bottom: 65px;
+}
